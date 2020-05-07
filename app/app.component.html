@@ -1,6 +1,6 @@
 <div style="text-align:center">
   <h1>
-    {{ title }}
+    {{ title | uppercase }}
   </h1>
  
   <img width="1000" height="200" alt="Angular Logo" src="https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
@@ -10,8 +10,8 @@
   <div class="vertical-menu"> 
 <ul class="nav nav-tabs">
   <li class="nav-item" routerLinkActive="active"><a routerLink="/">Accueil</a></li>
-  <li class="nav-item" ><a routerLink="/auth">Authentification</a></li>
- <li class="nav-item"><a routerLink="/appareils">Appareils</a></li>
+ <li class="nav-item"><a routerLink="/publication">Publications</a></li>
+ <li class="nav-item" ><a routerLink="/ceremonies">Cérémonies</a></li>
  <li class="nav-item"><a routerLink="/contact">Contact</a></li>
 </ul>
 </div> 

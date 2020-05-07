@@ -15,7 +15,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   appareils: any[];
   secondes: number;
-  title = 'Quality Assurance Engineer';
+  title = 'Histoire du peuple Ekang-Beti';
   counterSubscription: Subscription;
 
   constructor(private appareilService: AppareilService) {

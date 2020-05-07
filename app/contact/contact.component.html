@@ -1,4 +1,4 @@
-<body>
+<body class="contact">
 <div class="contact">
  <h2>Contact:</h2>
   <p> Résidence les écrins d'azur</p>
@@ -12,25 +12,25 @@
 <div class="message">
   <h2>Nous contacter:</h2>
   <label>Nom*: </label>
-  <div><input type="text" ngModel required maxlength="10"  #firstname=
+  <div><input type="text" ngModel required maxlength="10" name="firstname" #firstname=
     "ngModel"></div>
     <div *ngIf="firstname.dirty && firstname.hasError('required')">firstname is
       required
     </div>
 <label>Prenom*:</label>
-<div><input type="text" ngModel required maxlength="10"  #lastname=
+<div><input type="text" ngModel required maxlength="10" name="lastname"  #lastname=
   "ngModel"></div>
 <div *ngIf="lastname.dirty && lastname.hasError('required')">lastname is
   required
 </div>
 <label>Sujet*:</label>
-<div><input type="text" ngModel required maxlength="10"  #subject=
+<div><input type="text" ngModel required maxlength="10"  name="subject"  #subject=
   "ngModel"></div>
-<div *ngIf="subject.dirty || subject.hasError('required')">subject is
+<div *ngIf="subject.dirty && subject.hasError('required')">subject is
   required
 </div>
 <label>Message</label>
-<div><textarea placeholder="text" maxlength="300"></textarea></div> 
+<div><textarea placeholder="text" maxlength="300" name="message"></textarea></div> 
 <button class="btn btn-primary" type="submit" [disabled]="f.invalid">Envoyer</button>
  </div>
  </form>
